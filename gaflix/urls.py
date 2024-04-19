@@ -20,7 +20,8 @@ from django.views.generic import TemplateView
 
 
 urlpatterns = [
+    path('', TemplateView.as_view(template_name="filmy/prvni.html")),
     path('admin/', admin.site.urls),
     path('prvni/',  TemplateView.as_view(template_name="filmy/prvni.html")),
-    path('druha/',  TemplateView.as_view(template_name="filmy/druha.html"))
+    path('druhy/',  TemplateView.as_view(template_name="filmy/druhy.html"))
 ]
