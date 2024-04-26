@@ -15,5 +15,11 @@ class Director(models.Model):
     description = models.TextField(blank=True)
     main_picture = models.ImageField(blank=True, null = True)
 
+class Actor(models.Model):
+    name = models.CharField(max_length = 300)
+    birth_year = models.PositiveSmallIntegerField(blank = True, null = True)
+    description = models.TextField(blank=True)
+    main_picture = models.ImageField(blank=True, null = True)
+
 class Genre(models.Model):
     name = models.CharField(max_length = 300)
