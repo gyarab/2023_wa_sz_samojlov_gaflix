@@ -1,0 +1,11 @@
+[
+{
+  "model": "filmy.movie",
+  "pk": 1,
+  "fields": {
+    "name": "Pelisky",
+    "year": 2001,
+    "footage": 120
+  }
+}
+]
