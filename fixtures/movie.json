@@ -3,9 +3,45 @@
   "model": "filmy.movie",
   "pk": 1,
   "fields": {
-    "name": "Pelisky",
-    "year": 2001,
-    "footage": 120
+    "name": "Tři vejce do skla",
+    "year": 1937,
+    "footage": 94
+  }
+},
+{
+  "model": "filmy.movie",
+  "pk": 2,
+  "fields": {
+    "name": "Vrchní, prchni",
+    "year": 1981,
+    "footage": 88
+  }
+},
+{
+  "model": "filmy.movie",
+  "pk": 3,
+  "fields": {
+    "name": "Adéla ještě nevečeřela",
+    "year": 1978,
+    "footage": 105
+  }
+},
+{
+  "model": "filmy.movie",
+  "pk": 4,
+  "fields": {
+    "name": "Život je krásný",
+    "year": 1940,
+    "footage": 97
+  }
+},
+{
+  "model": "filmy.movie",
+  "pk": 5,
+  "fields": {
+    "name": "Jan Žižka",
+    "year": 1956,
+    "footage": 105
   }
 }
 ]
