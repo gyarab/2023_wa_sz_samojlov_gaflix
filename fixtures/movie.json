@@ -5,7 +5,12 @@
   "fields": {
     "name": "Tři vejce do skla",
     "year": 1937,
-    "footage": 94
+    "footage": 94,
+    "description": "",
+    "main_picture": "",
+    "director": null,
+    "actors": [],
+    "genres": []
   }
 },
 {
@@ -14,7 +19,12 @@
   "fields": {
     "name": "Vrchní, prchni",
     "year": 1981,
-    "footage": 88
+    "footage": 88,
+    "description": "",
+    "main_picture": "",
+    "director": null,
+    "actors": [],
+    "genres": []
   }
 },
 {
@@ -23,7 +33,12 @@
   "fields": {
     "name": "Adéla ještě nevečeřela",
     "year": 1978,
-    "footage": 105
+    "footage": 105,
+    "description": "",
+    "main_picture": "",
+    "director": null,
+    "actors": [],
+    "genres": []
   }
 },
 {
@@ -32,7 +47,12 @@
   "fields": {
     "name": "Život je krásný",
     "year": 1940,
-    "footage": 97
+    "footage": 97,
+    "description": "",
+    "main_picture": "",
+    "director": null,
+    "actors": [],
+    "genres": []
   }
 },
 {
@@ -41,7 +61,18 @@
   "fields": {
     "name": "Jan Žižka",
     "year": 1956,
-    "footage": 105
+    "footage": 105,
+    "description": "",
+    "main_picture": "",
+    "director": 3,
+    "actors": [
+      5,
+      6
+    ],
+    "genres": [
+      2,
+      4
+    ]
   }
 }
 ]
