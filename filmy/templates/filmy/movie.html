@@ -1,0 +1,14 @@
+{% extends 'filmy/base.html' %}
+
+{% block 'title' %}{{movie.name}} | {{ block.super }}{% endblock %}
+
+{% block 'content' %}
+    <h1>Film: {{movie.name}}</h1>
+    
+    <h2>Režie: {{movie.director}}</h2>
+    <img style="max-height: 300px;" src="{% if movie.main_picture %}{{movie.main_picture}}{% endif %}" alt="Card image cap">
+
+    <h4 class="mt-3"> Obsah </h4>
+    <p>{{movie.description}}</p>
+
+{% endblock %}

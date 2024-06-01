@@ -6,11 +6,17 @@
     "name": "Tři vejce do skla",
     "year": 1937,
     "footage": 94,
-    "description": "",
+    "description": "Česká komedie z roku 1937, režírovaná Martinem Fričem a v hlavní roli s Vlastou Burianem. Příběh sleduje osudy záhadného zahraničního agenta, který se skrývá pod identitou chudého houslisty. S pomocí šikovného trikáře a nečekaných převleků se hrdina zaplétá do spletitého komplotu, kde nechybí humor a napětí. Film je známý Burianovou komediální zručností a vtipnými dialogy, které dodnes baví diváky. Tři vejce do skla je klasickým příkladem československé meziválečné kinematografie, která kombinuje šarm, eleganci a humor.",
     "main_picture": "https://nfa.cz/filmy/import/395775-tri-vejce-do-skla/67016/image-thumb__67016__TeaserImage/395775_11400.jpg",
-    "director": null,
-    "actors": [],
-    "genres": []
+    "director": 1,
+    "actors": [
+      3,
+      6
+    ],
+    "genres": [
+      1,
+      9
+    ]
   }
 },
 {
@@ -20,11 +26,17 @@
     "name": "Vrchní, prchni",
     "year": 1981,
     "footage": 88,
-    "description": "",
+    "description": "Československá komedie z roku 1981, kterou režíroval Ladislav Smoljak. Hlavní roli falešného číšníka Dalibora Vránu ztvárnil Josef Abrhám. Příběh sleduje osudy knihkupce, který se rozhodne využít své podoby s číšníky a začne podvádět zákazníky v restauracích. Jeho trik je jednoduchý: obsluhuje hosty, inkasuje peníze a zmizí. Film je plný vtipných situací, které vyplývají z neustálého pronásledování a nečekaných zvratů. Vrchní, prchni je jednou z nejoblíbenějších českých komedií a dodnes se těší velké popularitě.",
     "main_picture": "https://www.filmovamista.cz/img/40-Vrchni--prchni-/cover/1578381001-57-0.jpg",
-    "director": null,
-    "actors": [],
-    "genres": []
+    "director": 4,
+    "actors": [
+      1,
+      4,
+      6
+    ],
+    "genres": [
+      1
+    ]
   }
 },
 {
@@ -34,11 +46,18 @@
     "name": "Adéla ještě nevečeřela",
     "year": 1978,
     "footage": 105,
-    "description": "",
+    "description": "Česká komedie z roku 1978, režírovaná Oldřichem Lipským. Film je parodií na detektivní žánr a vypráví příběh amerického detektiva Nicka Cartera, který přijíždí do Prahy řešit záhadný případ zmizelé osoby. Hlavním podezřelým je geniální zločinec, který vytvořil obrovskou masožravou rostlinu jménem Adéla. Film se vyznačuje originálním humorem, absurdními situacemi a skvělými hereckými výkony Rudolfa Hrušínského, Michala Dočolomanského a Miloše Kopeckého. Adéla ještě nevečeřela je nezapomenutelnou klasikou české kinematografie.",
     "main_picture": "https://mrtns.sk/tovar/_l/108/l108757.jpg?v=16801851212",
-    "director": null,
-    "actors": [],
-    "genres": []
+    "director": 4,
+    "actors": [
+      4,
+      5
+    ],
+    "genres": [
+      1,
+      5,
+      9
+    ]
   }
 },
 {
@@ -48,11 +67,18 @@
     "name": "Život je krásný",
     "year": 1940,
     "footage": 97,
-    "description": "",
+    "description": "Americká romantická komedie z roku 1940, režírovaná Frankem Caprou. Film sleduje příběh George Baileyho, muže, který je připravený vzdát se svého života, dokud ho nebeský anděl jménem Clarence neukáže, jak by svět vypadal bez jeho dobrých skutků. George si uvědomí, jak mnoho lidí ovlivnil a jak je jeho život ve skutečnosti krásný. Film je oslavou lidské dobroty, přátelství a naděje. James Stewart v hlavní roli podává nezapomenutelný výkon, který dodnes inspiruje diváky po celém světě.",
     "main_picture": "https://image.pmgstatic.com/cache/resized/w420/files/images/film/posters/162/405/162405769_f6bdb1.jpg",
-    "director": null,
-    "actors": [],
-    "genres": []
+    "director": 2,
+    "actors": [
+      5,
+      6
+    ],
+    "genres": [
+      1,
+      4,
+      6
+    ]
   }
 },
 {
@@ -62,7 +88,7 @@
     "name": "Jan Žižka",
     "year": 1956,
     "footage": 105,
-    "description": "",
+    "description": "Český historický film z roku 1956, režírovaný Otakarem Vávrou. Film je druhou částí Vávrovy husitské trilogie a sleduje životní osudy slavného vojevůdce Jana Žižky z Trocnova. Děj se odehrává v době husitských válek, kdy Žižka vede své vojsko do bojů proti křižákům a snaží se prosadit myšlenky Jana Husa. Film vyniká velkolepými bitevními scénami, historickou věrností a vynikajícími hereckými výkony Zdeňka Štěpánka v roli Žižky. Jan Žižka je významným dílem české kinematografie, které přibližuje důležitou část národní historie.",
     "main_picture": "https://image.pmgstatic.com/cache/resized/w936/files/images/film/photos/000/083/83436_924a77.jpg",
     "director": 3,
     "actors": [
