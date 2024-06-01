@@ -1,0 +1,58 @@
+{% extends 'filmy/base.html' %}
+
+{% block 'title' %}Filmy | {{ block.super }}{% endblock %}
+
+{% block 'content' %}
+
+    <h1>Režiséři</h1>
+
+    <br>
+
+    <h2>Jména režisérů:</h2>
+
+    <ul>
+        
+        {% for director in directors %}
+
+        <li>{{director.name}} </li> <br>
+
+        {% endfor %} 
+
+    </ul>
+
+    
+    <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
+
+        {% for director in directors %}
+
+        <div class="col">
+
+            <div class="card h-100">
+
+                <img class="card-img-top" style="height: 350px" src="{% if director.main_picture %}{{director.main_picture}} {% else %}//place-hold.it/180x100/ {% endif %}" alt="Foto filmu">
+
+                <div class="card-body">
+
+                    <h5 style="text-decoration: underline; font-weight: bold;" class="card-title">{{ director.name }} ({{ director.birth_year}})</h5>
+                                                                                                                                               
+                    <p class="card-text mt-3 ">{{ director.description|truncatewords_html:15 }}</p>
+
+                </div>
+                
+                <div class="card-footer text-end">
+                    <a href="{% url 'director' director.id %}" class="btn btn-primary">Detaily</a>
+                </div>
+                
+
+            </div>
+            
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+
+            
+        
+{% endblock %}

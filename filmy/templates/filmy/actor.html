@@ -1,0 +1,15 @@
+{% extends 'filmy/base.html' %}
+
+{% block 'title' %}{{actor.name}} | {{ block.super }}{% endblock %}
+
+{% block 'content' %}
+    <h1>Herec: {{actor.name}}</h1>
+
+    <h3>Rok narození: {{actor.birth_year}} </h3>
+
+    <img style="max-height: 300px;" src="{% if actor.main_picture %}{{actor.main_picture}}{% endif %}" alt="Card image cap">
+
+    <h4 class="mt-3"> Základní informace </h4>
+    <p>{{actor.description}}</p>
+
+{% endblock %}

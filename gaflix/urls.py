@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
 
-from filmy.views import movie, movies
+from filmy.views import movie, movies, directors, director, actors, actor
 
 
 urlpatterns = [
@@ -28,8 +28,8 @@ urlpatterns = [
     path('druhy/',  TemplateView.as_view(template_name="filmy/druhy.html")),
     path("filmy/", movies, name="movies"),
     path('film/<int:id>/', movie, name="movie"),
-    """ path("rezie/", movies, name="directors"), """
-    """ path('reziser/<int:id>/', movie, name="director"), """
-    """ path("herci/", movies, name="actors"), """
-    """ path('herec/<int:id>/', movie, name="actor") """
+    path("rezie/", directors, name="directors"),
+    path('reziser/<int:id>/', director, name="director"),
+    path("herci/", actors, name="actors"),
+    path('herec/<int:id>/', actor, name="actor")
 ]
