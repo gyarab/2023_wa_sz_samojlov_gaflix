@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 from .models import Movie, Director, Actor, Genre
+from django.db.models import Q
 
 
 def movies(request):
@@ -41,22 +42,8 @@ def directors(request):
 
     directors_queryset = Director.objects.all()
 
-    ## ziskani zanru z DB
-    genre = request.GET.get("genre")
-
-    if genre:
-        directors_queryset = directors_queryset.filter(genres__name=genre)
-
-    search = request.GET.get("search")
-    
-    if search:
-        directors_queryset = directors_queryset.filter(Q(name__icontains=search)|Q(description__icontains=search)) 
-
     context = {
-        "directors": directors_queryset,
-        "genres": Genre.objects.all().order_by("name"),
-        "genre": genre,
-        "search": search,
+        "directors": directors_queryset
     }
     return render(request, "filmy/directors.html", context)
 
@@ -74,22 +61,8 @@ def actors(request):
 
     actors_queryset = Actor.objects.all()
 
-    ## ziskani zanru z DB
-    genre = request.GET.get("genre")
-
-    if genre:
-        actors_queryset = actors_queryset.filter(genres__name=genre)
-
-    search = request.GET.get("search")
-    
-    if search:
-        actors_queryset = actors_queryset.filter(Q(name__icontains=search)|Q(description__icontains=search)) 
-
     context = {
-        "actors": actors_queryset,
-        "genres": Genre.objects.all().order_by("name"),
-        "genre": genre,
-        "search": search,
+        "actors": actors_queryset
     }
     return render(request, "filmy/actors.html", context)
 
