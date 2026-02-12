@@ -4,51 +4,56 @@
 
 {% block 'content' %}
 
-    <h1>Herci</h1>
+<div class="container my-5">
+    <h1 class="mb-4" style="border-bottom: 4px solid #ff450c; display: inline-block;">HERCI</h1>
 
-    <br>
+    <h3 class="mb-3 fw-normal fst-italic mt-3" style="color: #ff5d0c;">Jména herců:</h2>
 
-    <h2>Jména herců:</h2>
+        <ul class="list-group w-auto">
+            {% for actor in actors %}
+            <li class="list-group-item">{{ actor.name }}</li>
+            {% empty %}
+            <li class="list-group-item text-muted">Žádní herci nejsou zatím přidáni.</li>
+            {% endfor %}
+        </ul>
 
-    <ul>{% for actor in actors %}
+        <div class="row row-cols-1 mt-3  row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
 
-        <li>{{actor.name}} </li> <br>
+            {% for actor in actors %}
 
-    {% endfor %} </ul>
+            <div class="col">
 
-    
-    <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
+                <div id="card" class="card h-100 shadow border-0">
 
-        {% for actor in actors %}
+                    <img class="card-img-top" style="height: 350px; aspect-ratio: 2 / 3; object-fit: cover;"
+                        src="{% if actor.main_picture %}{{actor.main_picture}} {% else %}//place-hold.it/180x100/ {% endif %}"
+                        alt="Foto filmu">
 
-        <div class="col">
+                    <div class="card-body">
 
-            <div class="card h-100">
+                        <div
+                            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                           
+                            <a href="{% url 'actor' actor.id %}" style="color: #1f2933; text-decoration: none;">
+                                <h5 onmouseover="this.style.textDecoration='underline'; this.style.cursor='pointer';"
+                                    onmouseout="this.style.textDecoration='none';" class="card-title mb-0">
+                                    {{ actor.name }}
+                                </h5>
+                            </a>
 
-                <img class="card-img-top" style="height: 350px" src="{% if actor.main_picture %}{{actor.main_picture}} {% else %}//place-hold.it/180x100/ {% endif %}" alt="Foto filmu">
+                            <!-- Birth year -->
+                            <span class="text-muted fw-normal fs-6 d-block text-end">[{{ actor.birth_year }}]</span>
+                        </div>
 
-                <div class="card-body">
-
-                    <h5 style="text-decoration: underline; font-weight: bold;" class="card-title">{{ actor.name }} ({{ actor.birth_year}})</h5>
-
-                    <p class="card-text mt-3 ">{{ actor.description|truncatewords_html:15 }}</p>
+                        <p class="card-text text-body-secondary small mt-3 mb-3">
+                            {{actor.description|truncatewords_html:15 }}</p>
+                    </div>
 
                 </div>
-                
-                <div class="card-footer text-end">
-                    <a href="{% url 'actor' actor.id %}" class="btn btn-primary">Detaily</a>
-                </div>
-                
 
             </div>
-            
+            {% endfor %}
+
         </div>
 
-        {% endfor %}
-
-    </div>
-
-
-            
-        
-{% endblock %}
+        {% endblock %}

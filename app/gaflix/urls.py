@@ -23,9 +23,8 @@ from filmy.views import movie, movies, directors, director, actors, actor
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name="filmy/prvni.html")),
+    path('domu/', TemplateView.as_view(template_name="filmy/prvni.html")),
     path('admin/', admin.site.urls),
-    path('prvni/',  TemplateView.as_view(template_name="filmy/prvni.html")),
-    path('druhy/',  TemplateView.as_view(template_name="filmy/druhy.html")),
     path("filmy/", movies, name="movies"),
     path('film/<int:id>/', movie, name="movie"),
     path("rezie/", directors, name="directors"),

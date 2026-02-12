@@ -3,13 +3,27 @@
 {% block 'title' %}{{director.name}} | {{ block.super }}{% endblock %}
 
 {% block 'content' %}
-    <h1>Režisér: {{director.name}}</h1>
+<div class="container my-4">
 
-    <h3>Rok narození: {{director.birth_year}} </h3>
+    <!-- Jméno režiséra -->
+    <h1 class="display-4 fw-bold fst-italic mb-3">{{ director.name }}</h1>
 
-    <img style="max-height: 300px;" src="{% if director.main_picture %}{{director.main_picture}}{% endif %}" alt="Card image cap">
+    <!-- Rok narození -->
+    <h5 class="text-muted mb-3">Rok narození: {{ director.birth_year }}</h5>
 
-    <h4 class="mt-3"> Základní informace </h4>
-    <p>{{director.description}}</p>
+    <!-- Obrázek režiséra -->
+    {% if director.main_picture %}
+    <div class="mb-4">
+        <img src="{{ director.main_picture }}" alt="{{ director.name }}" class="img-fluid rounded"
+            style="max-height: 300px;">
+    </div>
+    {% endif %}
+
+    <!-- Základní informace -->
+    <h4 class="fw-semibold mb-2">Základní informace</h4>
+    <p class="lead" style="text-align: justify;">{{ director.description }}</p>
+
+</div>
+
 
 {% endblock %}

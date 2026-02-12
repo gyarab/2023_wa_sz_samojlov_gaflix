@@ -4,9 +4,58 @@
 
 {% block 'content' %}
 
-<h1>Ahoj Django</h1>
-<p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. A perspiciatis minima, pariatur similique qui obcaecati ea incidunt hic, eveniet accusamus sed alias! Quidem, nam nesciunt beatae est ut sequi corrupti.
-</p>
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+        <h1>Správa filmů</h1>
+        <p class="lead">
+            Webová aplikace pro správu filmů, herců a režisérů.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Filmy -->
+        <div id="card" class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+                    <h4 class="pb-2">🎬 Filmy</h4>
+                    <p class="card-text text-body-secondary">Přidávejte nové filmy</p>
+                    <a href="/filmy" class="btn btn-secondary mt-4">
+                        Zobrazit filmy
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Herci -->
+        <div id="card" class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+                    <h4 class="pb-2">⭐ Herci</h4>
+                    <p class="card-text text-body-secondary">Správa databáze herců</p>
+                    <a href="/herci" class="btn btn-secondary mt-4">
+                        Zobrazit herce
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rezie -->
+        <div id="card" class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+                    <h4 class="pb-2">🎥 Režiséři</h4>
+                    <p class="card-text text-body-secondary">Správa režisérů</p>
+                    <a href="/rezie" class="btn btn-secondary mt-4">
+                        Zobrazit režiséry
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
 {% endblock %}

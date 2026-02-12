@@ -3,12 +3,23 @@
 {% block 'title' %}{{movie.name}} | {{ block.super }}{% endblock %}
 
 {% block 'content' %}
-    <h1>Film: {{movie.name}}</h1>
-    
-    <h2>Režie: {{movie.director}}</h2>
-    <img style="max-height: 300px;" src="{% if movie.main_picture %}{{movie.main_picture}}{% endif %}" alt="Card image cap">
 
-    <h4 class="mt-3"> Obsah </h4>
-    <p>{{movie.description}}</p>
+<div class="container my-4">
+
+    <h1 class="display-4 fw-bold fst-italic mb-3">{{ movie.name }}</h1>
+
+    <h5 class="text-muted mb-3">Datum vydání: {{ movie.year }}</h5>
+
+    {% if movie.main_picture %}
+    <div class="mb-4">
+        <img src="{{ movie.main_picture }}" alt="{{ movie.name }}" class="img-fluid rounded"
+            style="max-height: 300px;">
+    </div>
+    {% endif %}
+
+    <h4 class="fw-semibold mb-2">Stručný obsah:</h4>
+    <p class="lead" style="text-align: justify;">{{ movie.description }}</p>
+
+</div>
 
 {% endblock %}
