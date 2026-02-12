@@ -25,16 +25,11 @@ from django.core.wsgi import get_wsgi_application
 
 application = get_wsgi_application()
 
-# Safe DB initialization
-def ensure_db():
-    from django.db import connection
-    from django.core.management import call_command
+from django.core.management import call_command
 
-    try:
-        connection.ensure_connection()
-    except:
-        call_command("migrate", interactive=False)
-
-ensure_db()
+try:
+    call_command("migrate", interactive=False)
+except Exception as e:
+    print("Migration error:", e)
 
 app = application
