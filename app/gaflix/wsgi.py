@@ -22,6 +22,19 @@ load_dotenv()
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gaflix.settings')
 
 from django.core.wsgi import get_wsgi_application
+from django.core.management import call_command
+
+try:
+    call_command("migrate", interactive=False)
+except Exception as e:
+    print("Migration error:", e)
+
+try:
+    call_command("loaddata", "app/fixtures/data.json")
+except Exception as e:
+    print("Fixture error:", e)
+
+
 application = get_wsgi_application()
 
 app = application
