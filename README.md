@@ -2,6 +2,8 @@
 
 Jedná se o webovou aplikaci Django, ve které si uživatel může přidávat a upravovat filmy.
 
+[![Deployed on PythonAnywhere](https://img.shields.io/badge/deployed-on%20PythonAnywhere-brightgreen)](https://vlada.pythonanywhere.com/)
+
 Inicializace projektu
 
 ```bash
