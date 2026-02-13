@@ -25,11 +25,11 @@ from django.core.wsgi import get_wsgi_application
 
 application = get_wsgi_application()
 
-from django.core.management import call_command
+# from django.core.management import call_command
 
-try:
-    call_command("migrate", interactive=False)
-except Exception as e:
-    print("Migration error:", e)
+#try:
+#    call_command("migrate", interactive=False)
+# except Exception as e:
+#    print("Migration error:", e)
 
 app = application
