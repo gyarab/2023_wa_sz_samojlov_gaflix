@@ -1,6 +1,8 @@
-# 2023_wa_sa_samojlov_gaflix
+# Gaflix 🎬
 
-Jedná se o webovou aplikaci Django, ve které si uživatel může přidávat a upravovat filmy.
+Jedná se o responzivní webovou aplikaci vytvořenou ve frameworku Django, která uživateli zobrazuje přehled nejznámějších českých herců, režisérů a filmů. U každé osobnosti je uveden rok narození a základní informace. 
+
+Filmy lze v aplikaci vyhledávat podle žánru nebo názvu pomocí vyhledávacího pole. U každého filmu je zobrazen název, stručný popis, žánry, herci, režiséři a rok uvedení. Po rozkliknutí detailu si uživatel může přečíst celý obsah filmu.
 
 [![Deployed on PythonAnywhere](https://img.shields.io/badge/deployed-on%20PythonAnywhere-brightgreen)](https://vlada.pythonanywhere.com/)
 
